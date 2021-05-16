@@ -1,11 +1,11 @@
 # Project Title
 
-Text-Translation-Api
+## Text-Translation-Api
 
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js and a node global package, Npm, installed in your environement.
 
 ### Node
 - #### Node installation on Windows
@@ -41,9 +41,10 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
       
 
 - #### Node, Mongodb installation on Windows
-  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
-  You can find more information about the installation on the  [official Mongodb website]( https://www.mongodb.com/1).
-  You can find more information about the installation on the [official Mongodb Compass website](https://www.mongodb.com/products/compass).
+  1. You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
+  2. You can find more information about the installation on the  [official Mongodb website]( https://www.mongodb.com/1).
+  3. You can find more information about the installation on the [official Mongodb Compass website](https://www.mongodb.com/products/compass).
+  
   To install express js compass, just run the following commonds.
   
       npm install express
