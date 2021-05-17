@@ -1,3 +1,16 @@
+English text to Hindi, Polish and Russian
+
+![Postman testing](https://user-images.githubusercontent.com/55358003/118481443-1fd0f300-b731-11eb-9377-edb8155d70d1.JPG)
+
+Arabic text to English and Hindi
+
+![Postman testing2](https://user-images.githubusercontent.com/55358003/118481833-89510180-b731-11eb-8e11-43a7e4ec3abc.JPG)
+
+The translated text save in databse  (last 5 entries)
+
+![Database screenshot2](https://user-images.githubusercontent.com/55358003/118481859-97068700-b731-11eb-8838-6cd29bb78f2f.JPG)
+
+
 # Project Title
 
 ## Text-Translation-Api
@@ -111,10 +124,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 - ## Testing of Project
 
    I used `POSTMAN` to test all my POST request. In postman at the place of `Enter request URL` type `localhost:3000/text` and select POST. Then choosing raw as json write the      text and language for the translated text and then click on send.
-   
-   
-   Below screnshots are given of testing done on POSTMAN and database:- 
-   
+     
   
     try {
         var list = []
@@ -144,4 +154,6 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
         });
     } 
     
+    
+     Screnshots are given of testing done on POSTMAN and database are all at starting of readme.
     
