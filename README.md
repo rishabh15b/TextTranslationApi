@@ -97,6 +97,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Running the project
 
    -- nodemon server.js and must be running on localhost:3000  // server.js because it is mentioned in as my start file in scripts which is in package.json file and it is the                                                                     main file.
+   
    -- mongodb server mast be running on 27017 PORT.
       
       
