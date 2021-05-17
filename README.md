@@ -18,6 +18,8 @@ The translated text save in databse  (last 5 entries)
 ---
 ## Requirements
 
+The language code given in the link are used for translation purpose [Supported Languages for translations](https://cloud.google.com/translate/docs/languages)
+
 For development, you will only need Node.js and a node global package, Npm, installed in your environement.
 
 ### Installation
@@ -102,20 +104,23 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
   
 1. Before starting any Node.js project we should run `npm init` to create a new package.json file for our project. Doing this we have to anwer few basic question to start developing pour project.
 
-3. Then we install express js to start writing our web application.
+2. Then we install express js to start writing our web application.
 
-5. Now I made a new file named `server.js` to start writing my simple express application for `text-transalation` in which i imported `create server` form `http`, configured a      PORT number using which on my web brower i will run my project.
+3. Now I made a new file named `server.js` to start writing my simple express application for `text-transalation` in which i imported `create server` form `http`, configured a      PORT number using which on my web brower i will run my project.
 
-7. Made a new file `app.js` which i imported in my main server.js file. Now in my app.js file I imported express and the code that i wrote was to give the response if any error    comes while running the server when requesting data from server.
+4. Made a new file `app.js` which i imported in my main server.js file. Now in my app.js file I imported express and the code that i wrote was to give the response if any error    comes while running the server when requesting data from server.
 
-6. Now I made two new files:
+5. Now I made two new files:
 
    One `conn.js` in which i configured my `mongodb connection` to store all my data whcih is a No-Sql type database and used `mongodb compass` to see all my database. Imported      stored.js file in conn.js.
    
    Second stored.js in whcih I worked on my data schema, to show what all data willbe asked and will be stored in my database.
    
-7. Now I made a new file text.js in which i started working on my `text-transaltion-api`, I used `@vitalets/google-translate-api` for my real text translation. Imported my          conn.js. Now used `HTTP method POST` which is used to send data to a server to create/update a resource and used `async` that permits other processing to continue                before the transmission has finished. 
+6. Now I made a new file text.js in which i started working on my `text-transaltion-api`, I used `@vitalets/google-translate-api` for my real text translation. Imported my          conn.js. Now used `HTTP method POST` which is used to send data to a server to create/update a resource and used `async` that permits other processing to continue                before the transmission has finished. 
    
+   
+- ## Approach and Solution towards the problem given:
+ 
 -- My approach towards this project was to take the languages, text from the user and translate in to the given language and then store it into my database. Now if any other        person wants the same translation so he has not to again translate if the same text and language is there in my database it will show the translated text and will not push it    again.
    
 -- So to solve this problem I declared a empty list first, then run a loop from `0 to language length` so that text can we translated for each language given which was in the      form of array. Then declared a variable in whcih I used my transalate function which i declared before in whcih I passed my two parameters text and language. Now declared a      new variable in which my translated text for every language and to store in in my databse i used `user.save()` commond. 
