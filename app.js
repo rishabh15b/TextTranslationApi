@@ -1,23 +1,16 @@
 const express = require('express');
 const app = express();
-
-
-
 const textRoutes = require('./api/text');
 
 //middleware
-
 app.use(express.json());
-
 // Routes which could handle requests
 app.use('/text', textRoutes);
-
 app.use((req,res,next) => {
     const error = new Error('Not Found');
     error.status = 404;
     next(error);
 })
-
 app.use((error,req,res,next) => {
    res.status(error.status || 500);
    res.json({
@@ -26,5 +19,4 @@ app.use((error,req,res,next) => {
        }
    }); 
 });
-
 module.exports = app;
