@@ -91,7 +91,7 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ## Install some dev dependencies
     1. async by the given commond.
         npm i async      
-    3. nodemon by given below commond.
+    2. nodemon by given below commond.
         npm install --save-dev nodemon
 
 ## Running the project
@@ -160,5 +160,5 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     } 
     
     
-     ScreDnshots are given of testing done on POSTMAN and database are all at starting of readme.
+     Screenshots are given of testing done on POSTMAN and database are all at starting of readme.
     
