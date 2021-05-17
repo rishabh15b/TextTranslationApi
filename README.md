@@ -160,5 +160,5 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
     } 
     
     
-     Screnshots are given of testing done on POSTMAN and database are all at starting of readme.
+     ScreDnshots are given of testing done on POSTMAN and database are all at starting of readme.
     
